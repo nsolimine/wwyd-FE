@@ -23,7 +23,6 @@ class App extends Component {
     return fetch('https://wwydbackend.herokuapp.com/questions')
       .then(response => response.json())
       .then(data => {
-        console.log(data.questions)
         this.setState({ questions: data.questions })
       })
   }
